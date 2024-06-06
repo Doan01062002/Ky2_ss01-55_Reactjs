@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- reduce(): thường dùng để thực hiện tính toán
+    acumulator: biến tích lũy
+    giá trị khởi tạo (,0) -->
+    <script>
+        let cart = [
+            {
+                price:80000,
+                quantity:4,
+            },
+            {
+                price:70000,
+                quantity:7,
+            }
+        ];
+
+        let numbers = [2,5,7,8];
+        let reduce = numbers.reduce((acumulator,curentValue,arr)=>{
+            return acumulator + curentValue
+        },0)
+        console.log(reduce);
+
+    </script>
+</body>
+</html>

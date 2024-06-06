@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        class: từ khóa dùng để khỏi tạo đối tượng
+     -->
+
+     <script>
+        class Student{
+            constructor(name,year){
+                this.name = name;
+                this.year = year;
+            }
+
+            getAge(){
+                let getAge = new Date().getFullYear()-this.year;
+                return getAge
+            }
+        }
+
+        let std1 = new Student("hoa",2000);
+        console.log(std1.getAge());
+
+     </script>
+</body>
+</html>

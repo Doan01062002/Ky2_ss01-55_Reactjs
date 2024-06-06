@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Toán tử spread ...
+        trong object chia làm hai dạng clone
+        1. deep clone: sâu
+        2. shalow clone: nông
+     -->
+
+     <script>
+        let obj1 = {
+            name:"hoa",
+            address:"hanoi",
+            id:1,
+            age:20
+        }
+
+        let obj2 = {...obj1}; //clone trong object
+        obj1.name = "huệ";
+        console.log("obj2", obj2.name);
+
+        let number1 = [1,2,3,4];
+        let number2 = [5,6,7,8];
+        let array = [...number1,...number2]
+        console.log(array);
+     </script>
+</body>
+</html>

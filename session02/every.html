@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    every(): Tất cả
+    dùng để duyệt các phần tử trong mảng
+    kết quả trả về true nếu tất cả phần tử thỏa mãn điều kiện
+    kết quả trả về false nếu có ít nhất phần tử nào thảo mãn điều kiện 
+     -->
+    <script>
+        let numbers = [4,5,6,7,8];
+
+        let result = numbers.every((item,index,arr)=>{
+            // console.log(item);
+            // console.log(index);
+            // console.log(arr);
+
+            return item >3
+        })
+
+        console.log(result)
+    </script>
+</body>
+</html>

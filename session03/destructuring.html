@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Đặc biệt quan trọng vì trong ReacJS sử dụng nhiều
+        1. dùng với array
+        2. dùng với object
+     -->
+     <script>
+        let student = ["minh thu", "lan anh", "bích ngọc"];
+        let [std1,std2,std3] = student;
+        console.log("std1", std1);
+        console.log("std2", std2);
+        console.log("std3", std3);
+
+        let obj = {
+            name:"hoa",
+            address:"hanoi",
+            id:1,
+            age:20
+        }
+
+        let {name,id,age} = obj;
+        console.log(name);
+     </script>
+</body>
+</html>

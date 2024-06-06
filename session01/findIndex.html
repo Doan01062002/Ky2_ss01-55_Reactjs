@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- tìm kiếm vị trí phần tử thỏa mãn nếu có trả về vị trí nếu không có trả về -1 -->
+    <script>
+        users = [
+            {
+                id:5,
+                name:"dũng"
+            },
+            {
+                id:6,
+                name:"hoàng"
+            }
+        ]
+
+        let result = users.findIndex((item,index,arr)=>{
+            return item.id === 6
+        })
+
+        console.log(result);
+    </script>
+</body>
+</html>

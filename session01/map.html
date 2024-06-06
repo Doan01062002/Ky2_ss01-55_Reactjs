@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        duyệt các phần tử trong mảng và tạo ra mảng mới
+        tạo ra mảng mới với số phần tử bằng với số phần tử mảng ban đầu
+     -->
+    <script>
+        
+        let arr = [4,5,6]
+
+        let arrNew = arr.map((item,index,arr)=>{
+            console.log("item", item);
+            console.log("index", index);
+            console.log("arr", arr);
+
+            return item>5;
+        })
+
+        console.log(arrNew);
+    </script>
+</body>
+</html>

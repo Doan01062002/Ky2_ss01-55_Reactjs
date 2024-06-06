@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Các hàm nâng cao trong JS
+        1. forEach()
+        2. map()
+        3. filter()
+        4. find()
+        5. findIndex()
+
+        //sự khác nhau giữa arrow function và function bình thường?
+        1. đối với arrow function thì phải gọi sau khi khai báo
+        2. cú pháp arrow function ngắn gọn hơn function bình thường
+        3. đối với arrow function không dùng được arguments(sẽ lấy hết đối số truyền vào)
+        4. không thể dùng làm hàm tạo constructer
+        5. binding(ràng buộc) this
+        ==> đối với function bình thường thì this đại diện cho đối tượng đấy
+        ==> đối với arr function thì this đại diện cho đối tượng window
+     -->
+</body>
+<script>
+    //function bình thường, decration
+    // function sum(a,b){
+    //     return a+b;
+    // }
+
+    // console.log(sum(1,5))
+
+    function student(name,age){
+        this.name1 = name;
+        this.age1 = age;
+
+    }
+    let student1 = new student("hoa",21);
+    console.log(student1);
+
+    //4.
+    const students = (name,age)=>{
+        this.name = name;
+        this.age = age;
+
+    }
+    let student2 = new students("hồng", 22);
+    console.log("student2", student2)
+
+    //5.
+    let obj = {
+        name: "hồng",
+        address: "hà nội",
+        getAddress: function(){
+            console.log("giá trị", this.address)
+        },
+        getAddress2: ()=>{
+            console.log("giá trị", this.address)
+        }
+    }
+
+    console.log(obj.getAddress());
+    console.log(obj.getAddress2());
+</script>
+</html>
